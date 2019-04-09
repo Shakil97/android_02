@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#20B2AA"
+            android:text="LILYPAD"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="#fff"
+            android:paddingRight="14dp"
+            android:drawableLeft="@mipmap/menu"
+            android:paddingVertical="10dp"
+            android:paddingLeft="14dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0FFFF">
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/play"
+            android:paddingVertical="83dp"
+            android:paddingHorizontal="40dp"
+            android:background="#F0FFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="[start an activity]" />
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="70dp"
+            android:layout_toRightOf="@id/play_button"
+            android:gravity="center"
+            android:text="MONDAY"
+            android:textColor="#9ACD32"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/play_button"
+            android:gravity="center"
+            android:text="27"
+            android:paddingTop="40dp"
+            android:textColor="#000"
+            android:textSize="100dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="#20B2AA">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/list"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:text="activity feed"
+                    android:paddingVertical="24dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="message"
+                    android:drawableTop="@mipmap/comment"
+                    android:background="@drawable/border"
+                    android:paddingVertical="24dp"/>
+            </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#20B2AA">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:text="document"
+            android:drawableTop="@mipmap/document"
+            android:paddingVertical="18dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/user"
+            android:text="user"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:paddingVertical="18dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
